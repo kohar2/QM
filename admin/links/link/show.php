@@ -4,13 +4,12 @@ include "../../../db.php";
 if(isset($_POST['add-material'])){
     $name = $_POST['number'];
     print_r($name);
+
     $conn = OpenConn();
 
     $id = $_POST['link_id'];
-    $split = explode(" ", $name);
+    $split = explode("\r\n", $name);
 
-    print_r($split);
-    die();
     foreach ($split as $key => $value) {
         $split[$key] = strtolower($value);
         $stmt3 = $conn->prepare("INSERT INTO material_numbers(number,link_id) VALUES (?,?)");
@@ -88,7 +87,7 @@ else{
 
                                     <div class="input-group flex-nowrap mb-2">
                                         <span class="input-group-text" id="addon-wrapping">Materiálové číslo</span>
-                                        <textarea type="textarea" class="form-control" name="number"></textarea>
+                                        <textarea type="textarea" class="form-control" placeholder="Viac materiálových čísel oddeľte enterom" name="number"></textarea>
                                     </div>
                                     <input type="text" value="<?php echo $id ?>" name="link_id" hidden>
 
