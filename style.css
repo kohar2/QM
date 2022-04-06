@@ -1,0 +1,180 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 10 version
+*/
+
+body{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+.AA,.AI{
+    background-color: #008B8B;
+}
+
+.AA a,.AA th{
+    color:white;
+    border-color: black;
+}
+
+.AI a,.AI th{
+    color:white;
+    border-color: black;
+}
+.empty{
+    background-color: red;
+    color: white;
+}
+.home{
+    background-color: #f3f3f3;
+    border-radius: 10px;
+}
+.MDB{
+    background-color: #00ccff;
+}
+.MDB a,.MDB th{
+    color:black;
+}
+.PP,.SL,.PRA{
+    background-color: yellow;
+    color: black;
+}
+.PP a,.SL a,.PRA a{
+
+    color: black;
+}
+.operator{
+    background-color: #008B8B;
+    color:white;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 25px;
+    padding: 5px;
+}
+.zoradovac{
+    background-color: #00ccff;
+    color:black;
+    font-size: 25px;
+    text-align: center;
+    padding: 5px;
+
+
+}
+.both{
+    background-color: yellow;
+    color:black;
+    font-size: 25px;
+    text-align: center;
+    padding: 5px;
+
+}
+.row{
+    display: -ms-grid;
+    display: grid;
+}
+.row{
+    -ms-grid-columns: 400px auto;
+    grid-template-columns: 400px auto;
+    -ms-grid-rows: 300px auto;
+    grid-template-rows: 300px auto;
+}
+.row > *:nth-child(1){
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+}
+.row > *:nth-child(2){
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+}
+.row > *:nth-child(3){
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+}
+.row > *:nth-child(4){
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+}
+.tabulka {
+    margin-left: 50px;
+    margin-top: 50px;
+    height: 90vh;
+    overflow: scroll;
+}
+.tabulka .table{
+    width: 100%;
+    margin-bottom: 20px ;
+}
+table, td, th {
+    border: 1px solid;
+    text-align: left;
+}
+th{
+    padding: 5px;
+}
+td{
+    padding: 2px;
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+}
+input{
+    font-size: 20px;
+    padding: 5px;
+}
+@media screen and (max-width: 600px) {
+    .row{
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        -ms-grid-rows: 300px auto;
+        grid-template-rows: 300px auto;
+    }
+    .row > *:nth-child(1){
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+    }
+    .row > *:nth-child(2){
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+    }
+    .row > *:nth-child(3){
+        -ms-grid-row: 2;
+        -ms-grid-column: 1;
+    }
+    .row > *:nth-child(4){
+        -ms-grid-row: 2;
+        -ms-grid-column: 1;
+    }
+    .tabulka {
+        margin-left: 0px;
+        margin-top: 0px;
+        height: 110vh;
+        overflow: scroll;
+    }
+    .tabulka .table{
+        width: 100%;
+        margin-bottom: 20px ;
+        margin-top: 0;
+    }
+    table, td, th {
+        border: 1px solid;
+        text-align: left;
+    }
+    th{
+        padding: 5px;
+    }
+    td{
+        padding: 2px;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    input{
+        font-size: 20px;
+        padding: 5px;
+    }
+
+}
