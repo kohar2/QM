@@ -1,4 +1,4 @@
-<div class="row justify-content-center">
+<div class="row ms-3">
     <div class="col-3">
         <form action="" class="form w-100" method="post">
 

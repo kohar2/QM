@@ -64,7 +64,7 @@ else{
             </thead>
             <div class="row">
             <?php
-            if(isset($_GET['id'])){
+            if(isset($_GET['link_id'])){
                 $id = $_GET['id'];
                 $link_id = $_GET['id'];
                 ?>

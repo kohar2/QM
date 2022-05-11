@@ -13,8 +13,12 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <form action="links/add.php" class="form w-100" method="post">
-
+                <form action="/QM/admin/links/add.php" class="form w-100" method="POST">
+                    <?php
+                    if(isset($_GET['department_id'])) {
+                        echo '<input type="hidden" name="department_id" value="'.$_GET['department_id'].'">';
+                    }
+                    ?>
                     <div class="input-group flex-nowrap mb-2">
                         <span class="input-group-text" id="addon-wrapping">Názov linky</span>
                         <input list="link_name" name="link_name">

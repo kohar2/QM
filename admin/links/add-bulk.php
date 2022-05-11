@@ -11,7 +11,7 @@ if (isset($_POST['add-bulk'])) {
 
             if (($_FILES['file']['name'] != "")) {
 
-                $target_dir = "../../pdfs/";
+                $target_dir = "../../pdfs/".$_POST['group_name']."/Platne_dokumenty/";
                 $file = $_FILES['file']['name'];
                 $path = pathinfo($file);
                 $filename = $path['filename'];

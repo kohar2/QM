@@ -14,7 +14,7 @@ if(isset($_POST['add-bulk-pdf-to-links'])) {
 
             if (($_FILES['file']['name'] != "")) {
 
-                $target_dir = "../../pdfs/";
+                $target_dir = "../../pdfs/".$group_name."/";
                 $file = $_FILES['file']['name'];
                 $path = pathinfo($file);
                 $filename = $path['filename'];

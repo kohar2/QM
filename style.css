@@ -5,8 +5,21 @@
 * Browsers: last 10 version
 */
 
+#linka,
+#department_name,
+.search,input{
+    font-size: 18px !important;
+    padding: 5px;
+}
+form{
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
 body{
     font-family: Verdana, Arial, Helvetica, sans-serif;
+    max-width: 1500px;
 }
 
 .AA,.AI{
@@ -30,11 +43,14 @@ body{
     background-color: #f3f3f3;
     border-radius: 10px;
 }
-.MDB{
-    background-color: #00ccff;
+.MDB,.ZD{
+    background-color: #00AAB8;
 }
 .MDB a,.MDB th{
-    color:black;
+    color:#FFF;;
+}
+.ZD a,.ZD th{
+    color:#FFF;;
 }
 .PP,.SL,.PRA{
     background-color: yellow;
@@ -53,8 +69,8 @@ body{
     padding: 5px;
 }
 .zoradovac{
-    background-color: #00ccff;
-    color:black;
+    background-color: #00AAB8;
+    color:#FFFFFF;
     font-size: 25px;
     text-align: center;
     padding: 5px;

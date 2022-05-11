@@ -4,6 +4,7 @@
     </div>
 
     <div class="col-8">
+        <?php include "add-link-button.php";?>
         <table class="table table-sm table-bordered table-rounded table-striped">
             <thead>
             <tr>
@@ -37,7 +38,7 @@
                 while($row = mysqli_fetch_assoc($select_users)) {
                     ?>
                     <tr>
-                        <td><a href="links/link/show.php?id=<?php echo $row['id']?>"> <?php echo $row['name']?></a></td>
+                        <td><a href="link/show.php?id=<?php echo $row['id']?>"> <?php echo $row['name']?></a></td>
                         <td><a href="materials/material/show.php?id=<?php echo $row['id'];?>" class="btn btn-sm btn-danger">Odstrániť</a></td>
 
                     </tr>
@@ -52,6 +53,6 @@
             </tbody>
         </table>
 
-        <a class="btn btn-primary" href="links/bulk-pdf.php">Pridať PDF k Linkám</a>
+        <a class="btn btn-primary" href="links/add-pdf-to-links.php">Pridať PDF k Linkám</a>
     </div>
 </div>

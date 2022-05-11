@@ -18,8 +18,8 @@
             <h2>QM - Elektronické dokumenty</h2>
         </div>
         <div class="col-4 mt-3">
-            <ul class="nav">
-                <li class="nav-link"><a href="/QM/admin/index.php">Domov</a></li>
+            <div class="nav">
+                <div class="nav-link btn"><a href="/QM/admin/index.php" class=" btn btn-primary">Domov</a></div>
                 <?php
                 if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
                     echo '<li class="nav-link"><a href="login.php">Prihlasit</a></li>';
@@ -32,7 +32,7 @@
                 ?>
                 <li class="nav-link"><a href="/QM/index.php">Frontend</a></li>
 
-            </ul>
+            </div>
         </div>
     </div>
 

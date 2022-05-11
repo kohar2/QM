@@ -21,28 +21,45 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
     <title>HYDAC-Admin</title>
 </head>
 <body>
-    <div class="row">
-        <div class="col-4 mt-4 ms-4 mb-5">
-            <a href="/QM/admin/index.php"><img src="/qm/HYDAC_ELECTRONIC.svg" alt=""></a>
+    <div class="row ms-3 mt-3 mb-3">
+        <div class="col-12 col-xl-3">
+            <a href="/QM/admin/index.php"><img src="/qm/HYDAC_ELECTRONIC.svg" alt="" class="img-fluid"></a>
             <h2>QM - Elektronické dokumenty</h2>
         </div>
-        <div class="col-4 mt-3">
-    <ul class="nav">
-        <li class="nav-link"><a href="/QM/admin/index.php">Domov</a></li>
-            <?php
-                if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
-                echo '<li class="nav-link"><a href="login.php">Prihlasit</a></li>';
+        <div class="col-12 col-xl-9">
+            <ul class="nav main-nav">
+                <div class="row w-100">
+                    <div class="col-12 col-lg-10 d-flex">
+                        <li class="nav-link"><a href="/QM/admin/departments/show.php" class="btn">Úseky výroby</a></li>
+                        <li class="nav-link"><a href="/QM/admin/pdfs/show.php" class="btn">PDF</a></li>
+                        <li class="nav-link"><a href="/QM/index.php" class="btn">Frontend</a></li>
+                        <li class="nav-link"><a href="/QM/admin/logout.php" class="btn">Odhlásiť</a></li>
 
-                }
-                else{
-                echo ' <li class="nav-link"><a href="logout.php">Odhlásiť</a></li>';
-                }
+                    </div>
 
-                ?>
-            <li class="nav-link"><a href="/QM/index.php">Frontend</a></li>
-
+                    <div class="col-2">
+                        <li class="nav-link">
+                            <form>
+                                <input type="button" class="btn btn-secondary" value="Späť" onclick="history.back()">
+                            </form>
+                        </li>
+                    </div>
+                </div>
             </ul>
         </div>
     </div>
 
+    <style>
+        .main-nav li a{
+            background-color: #242424;
+            color: #FFFFFF;
+        }
+        .main-nav li a:hover{
+            background-color: #e30613;
+            color: #242424;
+        }
+        .pull-right{
+            text-align: right;
+        }
+    </style>
 

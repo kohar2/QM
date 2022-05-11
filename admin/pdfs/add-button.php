@@ -1,7 +1,7 @@
 
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#add-path-modal">
-    Pridať
+<button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#add-path-modal">
+    Upraviť
 </button>
 
 <!-- Modal -->
@@ -19,7 +19,6 @@
                         <span class="input-group-text" id="addon-wrapping">Cesta k pdf</span>
                         <input type="text" class="form-control" name="path">
                     </div>
-
 
                     <input type="file"
                            id="file" name="file"
